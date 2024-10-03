@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/pages/home_page.dart';
 
 void main ()
 {
@@ -9,6 +10,11 @@ class NotesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      routes: {
+        HomePage.id : (context) => HomePage(),
+      },
+      initialRoute: HomePage.id,
+    );
   }
 }
