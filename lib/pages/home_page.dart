@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/widgets/notes_view.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      
+      body: NotesView(),
     );
   }
 }
