@@ -5,8 +5,8 @@ class HomePage extends StatelessWidget {
   static String id = 'Home Page';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.cyan,
+    return  Scaffold(
+      
     );
   }
 }
