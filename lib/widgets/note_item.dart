@@ -6,9 +6,9 @@ class NoteItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8),
-      padding: EdgeInsets.only(top: 14, bottom: 20, left: 10),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.only(top: 14, bottom: 20, left: 10),
+      decoration: const BoxDecoration(
         color: Color.fromARGB(255, 239, 179, 90),
         borderRadius: BorderRadius.all(Radius.circular(16)),
       ),
@@ -34,7 +34,7 @@ class NoteItem extends StatelessWidget {
             ),
             trailing: IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.delete,
                   color: Colors.black,
                   size: 35,
