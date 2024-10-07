@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_text_field.dart';
 
@@ -13,7 +15,9 @@ class AddNoteButtonSheet extends StatelessWidget {
           SizedBox(
             height: 32,
           ),
-          CustomTextField()
+          CustomTextField(hint: 'Title', ),
+          SizedBox(height: 24,),
+          CustomTextField(hint: 'Content' , maxlines: 8,)
         ],
       ),
     );
