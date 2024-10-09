@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16)),
               builder: (context) {
-                return const AddNoteButtonSheet();
+                return  AddNoteButtonSheet();
               });
         },
         child: const Icon(Icons.add),
