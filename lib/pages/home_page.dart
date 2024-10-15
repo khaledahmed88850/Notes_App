@@ -10,26 +10,23 @@ class HomePage extends StatelessWidget {
   static String id = 'Home Page';
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => NotesCubitCubit(),
-      child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: kPrimaryColor,
-          foregroundColor: Colors.black,
-          onPressed: () {
-            showModalBottomSheet(
-                isScrollControlled: true,
-                context: context,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16)),
-                builder: (context) {
-                  return const AddNoteButtonSheet();
-                });
-          },
-          child: const Icon(Icons.add),
-        ),
-        body: const NotesView(),
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: kPrimaryColor,
+        foregroundColor: Colors.black,
+        onPressed: () {
+          showModalBottomSheet(
+              isScrollControlled: true,
+              context: context,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)),
+              builder: (context) {
+                return const AddNoteButtonSheet();
+              });
+        },
+        child: const Icon(Icons.add),
       ),
+      body: const NotesView(),
     );
   }
 }
