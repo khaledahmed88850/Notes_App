@@ -12,13 +12,15 @@ class NoteItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-          return const EditNoteView();
+          return EditNoteView(
+            note: note,
+          );
         }));
       },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 8),
         padding: const EdgeInsets.only(top: 14, bottom: 20, left: 10),
-        decoration:  BoxDecoration(
+        decoration: BoxDecoration(
           color: Colors.cyan,
           borderRadius: BorderRadius.all(Radius.circular(16)),
         ),
